@@ -1,2 +1,2 @@
 # StudentApp
-Native android app developed during the university course of mobile development
+Native android app developed during the university course of mobile development.
