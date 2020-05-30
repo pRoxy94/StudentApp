@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".LauncherActivity">
+
+    <Button
+        android:id="@+id/btnFavRes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="65dp"
+        android:layout_marginBottom="73dp"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnFavRes"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSnake" />
+
+    <Button
+        android:id="@+id/btnSnake"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="26dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnSnake"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        app:layout_constraintBottom_toTopOf="@+id/btnFavRes"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavRes"
+        app:layout_constraintStart_toStartOf="@+id/btnFavRes"
+        app:layout_constraintTop_toBottomOf="@+id/btnCannon" />
+
+    <Button
+        android:id="@+id/btnCannon"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnCannon"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnSnake"
+        app:layout_constraintEnd_toEndOf="@+id/btnSnake"
+        app:layout_constraintStart_toStartOf="@+id/btnSnake"
+        app:layout_constraintTop_toBottomOf="@+id/btnFlagQuiz" />
+
+    <Button
+        android:id="@+id/btnMainActivity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnMainActivity"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnContacts"
+        app:layout_constraintEnd_toEndOf="@+id/btnContacts"
+        app:layout_constraintStart_toStartOf="@+id/btnContacts"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <Button
+        android:id="@+id/btnAlarm"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnAlarm"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnStudentActivity"
+        app:layout_constraintEnd_toEndOf="@+id/btnStudentActivity"
+        app:layout_constraintStart_toStartOf="@+id/btnStudentActivity"
+        app:layout_constraintTop_toBottomOf="@+id/btnContacts" />
+
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnContacts"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnAlarm"
+        app:layout_constraintEnd_toEndOf="@+id/btnAlarm"
+        app:layout_constraintStart_toStartOf="@+id/btnAlarm"
+        app:layout_constraintTop_toBottomOf="@+id/btnMainActivity" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DefaultSizeAppBar"
+        android:layout_marginBottom="60dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/DefaultSizeElevationAppBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toTopOf="@+id/btnMainActivity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnStudentActivity"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="23dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/strBtnStudentActivity"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnFlagQuiz"
+        app:layout_constraintEnd_toEndOf="@+id/btnFlagQuiz"
+        app:layout_constraintStart_toStartOf="@+id/btnFlagQuiz"
+        app:layout_constraintTop_toBottomOf="@+id/btnAlarm" />
+
+    <Button
+        android:id="@+id/btnFlagQuiz"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnFlagQuiz"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/btnCannon"
+        app:layout_constraintEnd_toEndOf="@+id/btnCannon"
+        app:layout_constraintStart_toStartOf="@+id/btnCannon"
+        app:layout_constraintTop_toBottomOf="@+id/btnStudentActivity" />
+</androidx.constraintlayout.widget.ConstraintLayout>

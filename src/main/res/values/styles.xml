@@ -1,0 +1,31 @@
+<resources>
+<!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@color/textColor</item>
+        <item name="subtitleTextColor">@color/textColor</item>
+    </style>
+
+    <style name="LauncherTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="titleTextColor">@color/textColor</item>
+        <item name="subtitleTextColor">@color/textColor</item>
+    </style>
+
+    <style name="LauncherTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="RadioButtonStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:radioButtonStyle"> @style/Widget.AppCompat.CompoundButton.RadioButton</item>
+    </style>
+
+    <style name="LauncherTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="LauncherTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

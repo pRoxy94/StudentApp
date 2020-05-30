@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/backPage">
+
+    <EditText
+        android:id="@+id/editExamName"
+        android:layout_width="233dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="57dp"
+        android:ems="10"
+        android:hint="@string/txtExamName"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toTopOf="@+id/editExNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/btnApply"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        android:background="@drawable/launcher_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editExNum"
+        app:layout_constraintTop_toBottomOf="@+id/editExNum" />
+
+    <EditText
+        android:id="@+id/editExNum"
+        android:layout_width="233dp"
+        android:layout_height="84dp"
+        android:layout_marginBottom="39dp"
+        android:ems="10"
+        android:hint="@string/txtExNumber"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toTopOf="@+id/btnApply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editExamName" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

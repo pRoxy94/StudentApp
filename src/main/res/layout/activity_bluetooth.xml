@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".bluetooth.BluetoothActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbBluetooth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DefaultSizeAppBar"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/DefaultSizeElevationAppBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/LauncherTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/bluetoothTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        android:layout_below="@id/tlbBluetooth">
+
+        <TableRow
+            android:id="@+id/trIsEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtIsEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/DefaultSizeTextBody"
+                android:padding="20dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold"
+                android:text="@string/txtIsEnabled" />
+
+            <Switch
+                android:id="@+id/stcEnabled"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/txtOn"
+                android:textOff="@string/txtOff"
+                android:layout_marginEnd="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/trIsVisible"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtIsVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textStyle="bold"
+                android:textSize="@dimen/DefaultSizeTextBody"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/txtIsVisible" />
+
+            <Switch
+                android:id="@+id/stcVisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textOn="@string/txtOn"
+                android:textOff="@string/txtOff"
+                android:layout_marginEnd="15dp"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/lstBtDevices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtLstBtDevices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="@dimen/DefaultSizeTextBody"
+                android:text="@string/txtLstBtDevices"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnShow"
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="27dp"
+                android:textSize="@dimen/DefaultSizeTextButton"
+                android:drawableStart="@drawable/ic_bluetooth"
+                android:background="@drawable/selector_button"
+                android:textColor="@color/colorTextButtonPrimary"
+                android:layout_marginEnd="20dp"
+                android:elevation="@dimen/DefaultSizeElevationButton"
+                android:text="@string/btnTxtShow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/lstPairedDevices"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/bluetoothTableLayout"
+        android:background="@color/backPage"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp">
+    </ListView>
+
+    <TableLayout
+        android:id="@+id/btNewDevicesTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lstPairedDevices"
+        android:stretchColumns="0,1,2"
+        android:elevation="2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtNewDevices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:text="@string/txtNewDevices"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <Button
+            android:id="@+id/btnScan"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginBottom="27dp"
+            android:textSize="@dimen/DefaultSizeTextButton"
+            android:drawableStart="@drawable/ic_bluetooth"
+            android:background="@drawable/selector_button"
+            android:textColor="@color/colorTextButtonPrimary"
+            android:layout_marginEnd="20dp"
+            android:elevation="@dimen/DefaultSizeElevationButton"
+            android:text="@string/btnTxtScan"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/lstNewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/btNewDevicesTableLayout"
+        android:background="@color/backPage"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp">
+    </ListView>
+
+    <TableLayout
+        android:id="@+id/btSendAverageTableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1,2"
+        android:layout_below="@id/lstNewDevices"
+        android:elevation="2dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtYourAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/strTxtYourAverage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/DefaultSizeTextBody"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnSend"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="35dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="27dp"
+                android:background="@drawable/selector_button"
+                android:elevation="@dimen/DefaultSizeElevationButton"
+                android:text="@string/btnTxtSend"
+                android:textColor="@color/colorTextButtonPrimary"
+                android:textSize="@dimen/DefaultSizeTextButton"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtYourFriendsAverage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="@string/strTxtYourFriendsAverage"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/DefaultSizeTextBody"
+                android:textStyle="bold" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

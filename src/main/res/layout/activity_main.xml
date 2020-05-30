@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editExamName"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginBottom="512dp"
+        android:ems="10"
+        android:hint="@string/txtExamName"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbMain" />
+
+    <Button
+        android:id="@+id/btnApply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="232dp"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        android:text="@string/btnApply"
+        android:textSize="@dimen/DefaultSizeTextButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editExNum"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:hint="@string/txtExNumber"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="@+id/editExamName"
+        app:layout_constraintTop_toBottomOf="@+id/editExamName" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbMain"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DefaultSizeAppBar"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/DefaultSizeElevationAppBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/LauncherTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

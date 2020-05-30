@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".student.StatisticsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/DefaultSizeAppBar"
+        android:layout_marginBottom="585dp"
+        android:background="?attr/colorPrimary"
+        android:elevation="@dimen/DefaultSizeElevationAppBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/AppTheme"
+        app:layout_constraintBottom_toTopOf="@+id/btnBluetooth"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableRow
+        android:id="@+id/tbPlannedActivities"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="470dp"
+        app:layout_constraintBottom_toTopOf="@+id/tbBaseDegreeValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtPlannedActivities"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="@string/strTextPlannedActivities"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold">
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbImage"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgActivities"
+            android:layout_height="170dp"
+            android:src="@mipmap/ic_planned_activities">
+        </ImageView>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbAverage"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="330dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtWeightedAverage"
+            android:layout_width="130dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/strTextWeightedAverage"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtAverage"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="@string/strTextAverage"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbAverageValues"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtWeightedAverageValue"
+            android:layout_width="130dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtAverageValue"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold">
+
+        </TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbDegreeBase"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="460dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/BaseDegreeMark"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/strTxtBaseDegreeMark"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold"></TextView>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tbBaseDegreeValue"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tbPlannedActivities">
+
+        <TextView
+            android:id="@+id/txtBaseDegreeMark"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textStyle="bold">
+        </TextView>
+    </TableRow>
+
+    <Button
+        android:id="@+id/btnBluetooth"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        android:drawableStart="@drawable/ic_bluetooth"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:gravity="center"
+        android:text="@string/btnBluetooth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbStatistics" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

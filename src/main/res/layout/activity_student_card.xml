@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".student.StudentCardActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="-43dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbStudent"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DefaultSizeAppBar"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/DefaultSizeElevationAppBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/LauncherTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:hint="@string/strName"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbStudent" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="27dp"
+        android:text="@string/strName"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlbStudent" />
+
+    <TextView
+        android:id="@+id/txtBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/txtBirthday"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSurname" />
+
+    <TextView
+        android:id="@+id/txtSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/strTextSite"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBirthday" />
+
+    <TextView
+        android:id="@+id/txtCellPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/strTextCellPhone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintEnd_toEndOf="@+id/txtSite"
+        app:layout_constraintStart_toEndOf="@+id/txtSite"
+        app:layout_constraintTop_toBottomOf="@+id/txtSite" />
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/strTextEmail"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCellPhone" />
+
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="42dp"
+        android:text="@string/strTxtGender"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <TextView
+        android:id="@+id/textViewExamsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="35dp"
+        android:text="@string/strTxtExamsDone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toTopOf="@+id/textViewExamToDo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewExamToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:text="@string/strTextExamsToDo"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextExamsToDo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editTextExamsToDo" />
+
+    <TextView
+        android:id="@+id/textViewAverageExamsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/strTextAverageExamsDone"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewExamToDo" />
+
+    <Button
+        android:id="@+id/btnSensors"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/selector_button"
+        android:textColor="@color/colorTextButtonPrimary"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/btnSensors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="@string/strEditSurname"
+        android:inputType="text"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
+
+    <EditText
+        android:id="@+id/editTextBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="@string/txtBirthday"
+        android:inputType="date"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="@+id/editTextSurname"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSurname" />
+
+    <EditText
+        android:id="@+id/editTextSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="@string/strTextSite"
+        android:inputType="textWebEmailAddress"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextBirthday" />
+
+    <EditText
+        android:id="@+id/editTextCellular"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:textSize="@dimen/fab_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSite" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/strTextEmail"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toTopOf="@+id/rdbMale"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rdbMale"
+        style="@style/RadioButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:text="@string/strRdbMale"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toTopOf="@+id/rdbFemale"
+        app:layout_constraintStart_toStartOf="@+id/rdgGender" />
+
+    <RadioButton
+        android:id="@+id/rdbFemale"
+        style="@style/RadioButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/strRdbFemale"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toTopOf="@+id/editTextExamsDone"
+        app:layout_constraintStart_toStartOf="@+id/rdbMale" />
+
+    <RadioGroup
+        android:id="@+id/rdgGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/rdbMale"
+        app:layout_constraintEnd_toStartOf="@+id/editTextEmail"
+        app:layout_constraintStart_toStartOf="@+id/editTextEmail"
+        app:layout_constraintTop_toTopOf="@+id/rdbMale">
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editTextExamsDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="212dp"
+        android:ems="10"
+        android:hint="@string/strTxtExamsDone"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSite" />
+
+    <EditText
+        android:id="@+id/editTextExamsToDo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="19dp"
+        android:ems="10"
+        android:hint="@string/strTextExamsToDo"
+        android:inputType="number|textPersonName"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExamsDone" />
+
+    <EditText
+        android:id="@+id/editTextAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/strTextAverageExamsDone"
+        android:inputType="textPersonName|numberDecimal"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="@+id/editTextExamsToDo"
+        app:layout_constraintTop_toBottomOf="@+id/editTextExamsToDo" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="27dp"
+        android:background="@drawable/primary_button"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/txtBtnSave"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/tgbModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/launcher_button"
+        android:elevation="@dimen/DefaultSizeElevationButton"
+        android:text="@string/strTgbModify"
+        android:textColor="@color/colorPrimaryDark"
+        android:textOff="@string/strTgbModify"
+        android:textOn="@string/strClear"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnSave"
+        app:layout_constraintEnd_toStartOf="@+id/btnSave" />
+
+    <TextView
+        android:id="@+id/txtSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="31dp"
+        android:text="@string/strTxtSurname"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/DefaultSizeTextBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

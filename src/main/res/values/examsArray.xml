@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="ExamsList">
+        <item>Architecture</item>
+        <item>Mathematical Analysis</item>
+        <item>Discreet Mathematics</item>
+        <item>Programming</item>
+        <item>Programming Languages</item>
+        <item>Computer Lab</item>
+        <item>English Language</item>
+        <item>Programming 2</item>
+        <item>Numerical Calculation</item>
+        <item>Database Design</item>
+        <item>Computers Networks</item>
+        <item>Software Engineering</item>
+        <item>Statistics For Software Engineering</item>
+        <item>Economy And Enterprise Management</item>
+        <item>Physics applied to computing</item>
+        <item>Models And Methods</item>
+        <item>Integration And Testing</item>
+        <item>Designing And Interacting WithUser</item>
+        <item>Mobile Software Development</item>
+        <item>Agent Systems</item>
+        <item>Information Systems</item>
+    </string-array>
+
+    <string-array name="CFUList">
+        <item>9</item>
+        <item>9</item>
+        <item>9</item>
+        <item>9</item>
+
+        <item>9</item>
+        <item>9</item>
+        <item>6</item>
+
+        <item>9</item>
+        <item>6</item>
+        <item>9</item>
+        <item>9</item>
+
+        <item>9</item>
+        <item>6</item>
+        <item>6</item>
+        <item>6</item>
+
+        <item>9</item>
+        <item>9</item>
+        <item>6</item>
+        <item>9</item>
+
+        <item>6</item>
+        <item>6</item>
+
+    </string-array>
+
+    <string-array name="YearList">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="SemesterList">
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+        <item>2</item>
+
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+        <item>1</item>
+
+        <item>2</item>
+        <item>2</item>
+    </string-array>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="it.uniba.di.sms.laricchia">
+
+    <supports-screens android:largeScreens="true" />
+    <!-- Declares that the app supports devices w/o touch, such as a Google TV device -->
+    <uses-feature android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <!-- Richiesta permessi -->
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/LauncherTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity android:name=".cannon.CannonApp"/>
+
+        <activity android:name=".flagquiz.FlagQuizGame"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".favouriteresearch.MainFavoriteSearches"/>
+
+        <activity android:name=".snake.Snake"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="nosensor"
+            android:theme="@android:style/Theme.NoTitleBar"/>
+
+        <activity android:name=".bluetooth.BluetoothActivity"/>
+        <activity android:name=".student.StatisticsActivity" />
+        <activity android:name=".student.ExamsDoneList" />
+        <activity android:name=".student.ExamsList" />
+        <activity
+            android:name=".sensor.SensorListActivity"
+            android:label="@string/title_sensor_list"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".sensor.SensorDetailActivity"
+            android:label="@string/title_sensor_detail"
+            android:parentActivityName=".sensor.SensorListActivity"
+            android:theme="@style/LauncherTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.uniba.di.sms.laricchia.sensor.SensorListActivity" />
+        </activity>
+        <activity android:name=".student.StudentCardActivity" />
+        <activity android:name=".AlarmActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SET_ALARM" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LauncherActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SecondActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".SecondActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/tlbExamDetails"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DefaultSizeAppBar"
+        android:background="@color/colorPrimary"
+        android:elevation="@dimen/DefaultSizeElevationAppBar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/LauncherTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--TableRow0-->
+    <!--TableRow1-->
+    <TableRow
+        android:id="@+id/trZero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="50dp"
+        android:paddingBottom="20dp">
+
+        <TextView
+            android:id="@+id/txtGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtGrade"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody"
+            android:textAlignment="center" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtWrittenVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtWrittenVote"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody" />
+
+        <EditText
+            android:id="@+id/editVote"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/DefaultSizeTextBody" />
+    </TableRow>
+
+    <!--TableRow2-->
+    <TableRow
+        android:id="@+id/trTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        >
+
+        <SeekBar
+            android:id="@+id/seekWrittenVote"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:max="24"
+            android:min="18"
+            android:progress="20"
+            android:progressTint="#FF9800" />
+
+    </TableRow>
+
+    <!--TableRow3-->
+    <TableRow
+        android:id="@+id/trThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtOralVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtOralVote"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody" />
+
+        <EditText
+            android:id="@+id/editVote2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/DefaultSizeTextBody" />
+    </TableRow>
+
+    <!--TableRow4-->
+    <TableRow
+        android:id="@+id/trFour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+        <SeekBar
+            android:id="@+id/seekOralVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="6"
+            android:progress="3"
+            android:progressTint="#FF9800" />
+
+    </TableRow>
+
+    <!--TableRow5-->
+    <TableRow
+        android:id="@+id/trFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtNumberEx"
+            android:textAlignment="textStart"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody"/>
+
+        <EditText
+            android:id="@+id/editVoteExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/DefaultSizeTextBody"/>
+    </TableRow>
+
+    <!--TableRow6-->
+    <TableRow
+        android:id="@+id/trSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:gravity="center_horizontal">
+
+        <SeekBar
+            android:id="@+id/seekExercise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="2"
+            android:progressTint="#FF9800" />
+    </TableRow>
+
+    <!--TableRow7-->
+    <TableRow
+        android:id="@+id/trSeven"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtFinalVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtFinalVote"
+            android:textAlignment="textStart"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/editVoteFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/DefaultSizeTextBody" />
+    </TableRow>
+
+    <!--TableRow8-->
+    <TableRow
+        android:id="@+id/trBtnBack"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="30dp"
+            android:text="@string/btnBack"
+            android:elevation="@dimen/DefaultSizeElevationButton"
+            android:background="@drawable/selector_button"
+            android:textColor="@color/colorTextButtonPrimary"
+            android:textSize="@dimen/DefaultSizeTextButton"
+            tools:targetApi="o" />
+    </TableRow>
+</TableLayout>
+
+
+
+
+
+
+
+
+

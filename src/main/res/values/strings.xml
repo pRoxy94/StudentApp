@@ -1,0 +1,168 @@
+<resources>
+    <string name="app_name">Laricchia</string>
+    <string name="name">Name</string>
+    <string name="txtEmpty">- empty -</string>
+    <string name="txtHint">Write something</string>
+    <string name="txtHW">Hello World!</string>
+    <string name="txtExamName">Write an exam name</string>
+    <string name="txtExNumber">Write number of exercises planned</string>
+    <string name="btnApply">Apply</string>
+    <string name="txtGrade">%1$s Vote</string>
+    <string name="txtWrittenVote">Written vote (/24)</string>
+    <string name="txtOralVote">Oral vote (/6)</string>
+    <string name="txtNumberEx">%1$s %2$s (/3)</string>
+    <string name="txtFinalVote">Final Vote:</string>
+    <string name="btnBack">Back Home</string>
+    <string name="txtBtnMainActivity">Main Activity</string>
+    <string name="txtBtnSecondActivity">Second Activity</string>
+    <string name="txtBtnContacts">Contacts</string>
+    <string name="txtBtnAlarm">Alarm</string>
+    <string name="txtAlarm">Insert alarm time</string>
+    <string name="txtBtnSetAlarm">Set alarm</string>
+    <string name="setAlarm">Alarm set to %1$s:%2$s</string>
+    <string name="txtEditHour">Insert hours</string>
+    <string name="txtEditMinutes">Insert minutes</string>
+    <string name="strAlarm">Alarm</string>
+    <string name="strTxtAlarm">Wakeup!</string>
+    <string name="strShowMessage">Watchword</string>
+
+    <plurals name="numberOfExercises">
+        <item quantity="one">Exercise</item>
+        <item quantity="other">Exercises</item>
+    </plurals>
+    <string name="strWatchword">Live and let live! :)</string>
+    <string name="strName">Name</string>
+    <string name="strTxtSurname">Surname</string>
+    <string name="strEditSurname">Surname</string>
+    <string name="txtBirthday">Birthday</string>
+    <string name="strTextSite">Site</string>
+    <string name="strTextCellPhone">Cellular</string>
+    <string name="strTextEmail">Email</string>
+    <string name="strTxtGender">Gender</string>
+    <string name="strRdbMale">Male</string>
+    <string name="strRdbFemale">Female</string>
+    <string name="strTextExamsToDo">To-do exams</string>
+    <string name="strTxtExamsDone">Exams Done</string>
+    <string name="strTxtExamsList">Exams List</string>
+    <string name="strTxtExamsDoneList">Exams Done List</string>
+    <string name="strTextAverageExamsDone">Average</string>
+    <string name="btnSensors">Sensors</string>
+    <string name="strTgbModify">Modify</string>
+    <string name="strBtnStudentActivity">Student Card</string>
+    <string name="strClear">Clear</string>
+    <string name="title_sensor_list">Sensors</string>
+    <string name="title_sensor_detail">Sensor Detail</string>
+    <string name="txtBtnSave">Save</string>
+    <string name="strBtnRetrieve">Retrieve</string>
+    <string name="strSavedData">Data saved on Shared Preferences, Internal and External Memory</string>
+    <string name="strTextPlannedActivities">Planned Activities</string>
+    <string name="strTextWeightedAverage">Weighted Average</string>
+    <string name="strTextAverage">Average</string>
+    <string name="strTxtBaseDegreeMark">Base Degree Mark</string>
+    <string name="strTxtStatistics">Statistics</string>
+    <string name="strTxtCareer">Career</string>
+    <string name="strTxtStudentCard">Student Card</string>
+    <string name="strTxtBluetooth">Bluetooth</string>
+    <string name="btnTxtOn">On</string>
+    <string name="btnTxtOff">Off</string>
+    <string name="btnTxtShow">Show</string>
+    <string name="txtIsEnabled">Enabled</string>
+    <string name="txtIsVisible">Visible</string>
+    <string name="txtLstBtDevices">Paired List Devices</string>
+    <string name="btnScan">Scan</string>
+    <string name="txtOn">On</string>
+    <string name="txtOff">Off</string>
+    <string name="strTxtOn">On</string>
+    <string name="strTxtOff">Off</string>
+    <string name="txtNewDevices">Nearby List Devices</string>
+    <string name="btnTxtScan">Scan</string>
+    <string name="btnTxtSend">Send</string>
+    <string name="strTxtYourAverage">Your average is: %1$s</string>
+    <string name="strTxtYourFriendsAverage">Your friend\'s average is: %1$s</string>
+    <string name="strReceiveConnection">The device is not in discoverable mode but can still receive connections</string>
+    <string name="strDiscModeOk">The device is in discoverable mode</string>
+    <string name="strDiscModeNo">The device is not in discoverable mode and can\'t receive connections</string>
+    <string name="strDiscError">Error</string>
+
+    <string name="txtBtnFavRes">Fav Research</string>
+    <string name="txtBtnSnake">Snake</string>
+    <string name="txtBtnCannon">Cannon</string>
+
+    <!--Flag Activity-->
+    <string name="choices">Select Number of Choices</string>
+    <string name="correct">correct</string>
+    <string name="flag">Flag</string>
+    <string name="guess_country">Guess the Country</string>
+    <string name="guesses">guesses</string>
+    <string name="incorrect_answer">Incorrect!</string>
+    <string name="more_regions_title">More Regions Required</string>
+    <string name="more_regions_message">There are not enough countries in
+      the selected regions. Please select more regions.</string>
+    <string name="of">of</string>
+    <string name="ok">OK</string>
+    <string name="question">Question</string>
+    <string name="quiz_title">Ten Question Flag Quiz</string>
+    <string name="regions">Select Regions</string>
+    <string name="reset_quiz">Reset Quiz</string>
+    <string name="txtBtnFlagQuiz">Flag Quiz</string>
+    <string name="strFlagQuiz">Flag Quiz</string>
+
+    <string-array name="regionsList">
+        <item>Africa</item>
+        <item>Asia</item>
+        <item>Europe</item>
+        <item>North_America</item>
+        <item>Oceania</item>
+        <item>South_America</item>
+    </string-array>
+    <string-array name="guessesList">
+        <item>3</item>
+        <item>6</item>
+        <item>9</item>
+    </string-array>
+
+    <!--Cannon Activity-->
+    <string name="reset_game">Reset Game</string>
+    <string name="win">You win!</string>
+    <string name="lose">You lose!</string>
+    <string name="time_remaining_format">
+      Time remaining: %.1f seconds</string>
+
+
+    <!--Snake Activity-->
+    <string name="mode_lose">Game Over Score: %1$d  Touch Screen To Play</string>
+
+    <!--Fav Res Activity-->
+    <string name="tagPrompt">Tag your query</string>
+    <string name="queryPrompt">Enter your search query here</string>
+    <string name="taggedSearches">Tagged Searches</string>
+    <string name="edit">Edit</string>
+    <string name="clearTags">Clear Tags</string>
+    <string name="save">Save</string>
+    <string name="erase">Erase</string>
+    <string name="cancel">Cancel</string>
+    <string name="OK">Ok</string>
+    <string name="missingTitle">Missing Text</string>
+    <string name="missingMessage">
+      Please enter a search query and tag it.</string>
+    <string name="confirmTitle">Are You Sure?</string>
+    <string name="confirmMessage">
+      This will delete all saved searches</string>
+    <string name="btnBluetooth">Bluetooth</string>
+    <string name="mode_pause">Paused Touch Screen To Resume</string>
+    <string name="mode_ready">Snake Touch Screen To Play</string>
+    <string name="results_format">Shots fired: %1$d Total time: %2$.1f</string>
+    <string name="searchURL">http://www.google.it/search?q=</string>
+    <string name="strSavedDataExternal">Saved Data On External Memory</string>
+    <string name="strSavedDataInternal">Saved Data On Internal Memory</string>
+    <string name="strSavedDataSP">Saved Data On Shared Preferences</string>
+    <string name="txtEditHourMin">Insert hours and minutes</string>
+    <string name="strDescImgUp">snake image up</string>
+    <string name="strDescImgRight">snake image right</string>
+    <string name="strDescImgLeft">snake image left</string>
+    <string name="strDescImgDown">snake image down</string>
+    <string name="strTxtExamDetails">Exam Details</string>
+    <string name="strTxtExam">Exam</string>
+    <string name="txtSendAverage">Send Average</string>
+
+</resources>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backPage"
+    tools:context=".SecondActivity">
+
+    <!--TableRow0-->
+
+    <!--TableRow1-->
+    <TableRow
+        android:id="@+id/trZero"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/txtGrade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtGrade"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/trOne"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtWrittenVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtWrittenVote"
+            android:textAlignment="textStart"
+            android:textSize="19sp"
+            android:layout_marginStart="5dp"/>
+
+        <EditText
+            android:id="@+id/editVote"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtOralVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtOralVote"
+            android:textAlignment="textStart"
+            android:textSize="19sp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/editVote2"
+            android:layout_width="118dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <!--TableRow2-->
+    <TableRow
+        android:id="@+id/trTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:weightSum="2">
+
+        <SeekBar
+            android:id="@+id/seekWrittenVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFC107"
+            android:max="24"
+            android:min="18"
+            android:progress="20"
+            android:progressTint="#FF9800"
+            android:layout_weight="1"
+            android:layout_marginRight="15dp"/>
+
+        <SeekBar
+            android:id="@+id/seekOralVote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="6"
+            android:progress="2"
+            android:progressTint="#FF9800" />
+    </TableRow>
+
+    <!--TableRow3-->
+    <TableRow
+        android:id="@+id/trThree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtNumberEx"
+            android:textAlignment="textStart"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/editVoteExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtFinalVote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txtFinalVote"
+            android:textAlignment="textStart"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"/>
+
+        <EditText
+            android:id="@+id/editVoteFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </TableRow>
+
+    <!--TableRow 4-->
+    <TableRow
+        android:id="@+id/trSix"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <SeekBar
+            android:id="@+id/seekExercise"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:progress="10"
+            android:progressTint="#FF9800"
+            />
+    </TableRow>
+
+    <!--TableRow 5-->
+    <TableRow
+        android:id="@+id/trBtnBack"
+        android:layout_width="match_parent"
+        android:layout_height="223dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btnBack"
+            android:background="@drawable/selector_button"
+            android:textColor="@color/colorTextButtonPrimary"
+            android:textSize="19sp"
+            tools:targetApi="o" />
+    </TableRow>
+
+</TableLayout>
